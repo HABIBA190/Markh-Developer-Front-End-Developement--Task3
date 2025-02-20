@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+textarea {
+  width: 80%;
+  height: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f8f9fc;
+  color: #333;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  min-width: 150px;
+  text-align: center;
+}
+
+button svg {
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.start, .stop {
+  background: linear-gradient(135deg, #4e73df, #3b5b99);
+}
+
+.start:hover {
+  background: linear-gradient(135deg, #3b5b99, #2e59d9);
+  transform: scale(1.05);
+}
+
+.start:active {
+  background: linear-gradient(135deg, #2eb7d9, #1c87b7);
+  transform: scale(0.98);
+}
+
+.reset {
+  background: linear-gradient(135deg, #e73b3b, #d64a35);
+}
+
+.reset:hover {
+  background: linear-gradient(135deg, #d64a35, #c0392b);
+  transform: scale(1.05);
+}
+
+.reset:active {
+  background: linear-gradient(135deg, #c0392b, #a93226);
+  transform: scale(0.98);
+}
+
+.copy {
+  background: linear-gradient(135deg, #ff7f50, #ff6347);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.copy:hover {
+  background: linear-gradient(135deg, #ff6347, #e55340);
+  transform: scale(1.05);
+}
+
+.copy:active {
+  background: linear-gradient(135deg, #e55340, #c93e2d);
+  transform: scale(0.98);
+}
+
+.copy-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.toast-popup {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.toast-popup.show {
+  opacity: 1;
+}
+
+.toast-popup.fade-out {
+  opacity: 0;
+}
